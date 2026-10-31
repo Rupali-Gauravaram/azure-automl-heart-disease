@@ -1,6 +1,6 @@
 # Heart Disease Classification: AutoML model deployed as a real-time endpoint on Azure ML
 
-## What it does
+## What it does 
 Predicts whether a patient has **heart disease** (binary classification, `target` 1/0) from 13 clinical inputs: age, gender, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG, maximum heart rate, exercise-induced angina, oldpeak (ST depression), slope, number of major vessels and thalassemia.
 
 ## Pipeline
@@ -15,7 +15,7 @@ Resource group → Azure ML workspace (+ storage, key vault, App Insights, Log A
 ```
 
 ## Steps (all in Azure Machine Learning)
-1. **Resource group** `rs_heartDisease` + **workspace** `ws_heartDisease`, with storage, key vault, Application Insights and Log Analytics.
+1. Created **Resource group** `rs_heartDisease` + **workspace** `ws_heartDisease`, with storage, key vault, Application Insights and Log Analytics.
 2. **Data asset** `HeartDisease` (v1): **303 rows × 14 columns** (13 features + `target`).
 3. **Automated ML classification job** `MLjob_HeartDiseaseClassifier` (Experiment_HD1), ranked by **weighted AUC**:
    - **Best: StandardScalerWrapper + XGBoostClassifier, AUC 0.906**
@@ -53,5 +53,5 @@ The AutoML result sits within the fold-to-fold spread of the hand-built model (�
 ![07_endpoint_succeeded](screenshots/07_endpoint_succeeded.png)
 
 ## Author
-**Rupali Gauravaram**: MSc Climate Resilience & Environmental Sustainability (University of Liverpool), Advanced Certification in Data Science & AI (IIT Roorkee).
+**Rupali Gauravaram**: MSc Climate Resilience & Environmental Sustainability (University of Liverpool), Advanced Certification in Data Science & AI (IIT Roorkee - Intellipaat).
 [LinkedIn](https://linkedin.com/in/rupali99) · [GitHub](https://github.com/Rupali-Gauravaram)
