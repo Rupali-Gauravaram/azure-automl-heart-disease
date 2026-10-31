@@ -1,5 +1,4 @@
 # Heart Disease Classification: AutoML model deployed as a real-time endpoint on Azure ML
-*Built 31 Oct 2026 during an MLOps course (IIT Roorkee · Intellipaat). The Azure resources were deleted afterwards to avoid cost; this repository is the record.*
 
 ## What it does
 Predicts whether a patient has **heart disease** (binary classification, `target` 1/0) from 13 clinical inputs: age, gender, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG, maximum heart rate, exercise-induced angina, oldpeak (ST depression), slope, number of major vessels and thalassemia.
